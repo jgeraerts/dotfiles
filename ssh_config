@@ -1,0 +1,16 @@
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath ~/.ssh/private/master-%r@%h:%p
+ForwardAgent yes
+
+Host tm-*
+     User developer
+     IdentityFile ~/.ssh/id_rsa
+
+Host vm*.umask.net
+     User jgeraert
+     Identityfile ~/.ssh/id_rsa-private
+
+Host elmo
+     User ubnt
+     IdentityFile ~/.ssh/id_rsa-private
