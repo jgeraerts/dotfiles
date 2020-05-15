@@ -7,10 +7,14 @@ Host tm-*
      User developer
      IdentityFile ~/.ssh/id_rsa
 
-Host vm*.umask.net
+Host vm*.umask.net nas
      User jgeraert
      Identityfile ~/.ssh/id_rsa-private
 
 Host elmo
      User ubnt
+     IdentityFile ~/.ssh/id_rsa-private
+
+Host home
+     User pi
      IdentityFile ~/.ssh/id_rsa-private
