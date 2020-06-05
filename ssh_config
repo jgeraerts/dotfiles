@@ -18,3 +18,8 @@ Host elmo
 Host home
      User pi
      IdentityFile ~/.ssh/id_rsa-private
+
+Host bepartners
+     User jgeraert
+     IdentityFile ~/.ssh/id_rsa-private
+     Hostname 81.83.0.146
