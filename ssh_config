@@ -4,7 +4,7 @@ ControlPath ~/.ssh/private/master-%r@%h:%p
 ForwardAgent yes
 
 Host tm-*
-     User developer
+     User joger
      IdentityFile ~/.ssh/id_rsa
 
 Host vm*.umask.net nas
