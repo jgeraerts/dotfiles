@@ -72,7 +72,7 @@ zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa-private
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm ssh-agent tmux jenv osx z)
+plugins=(git nvm ssh-agent tmux jenv osx z rust rustup cargo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,3 +103,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $(brew --prefix nvm)/nvm.sh
+export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
