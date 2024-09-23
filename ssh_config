@@ -1,18 +1,23 @@
+Include /Users/joger/.colima/ssh_config
+
 ServerAliveInterval 30
 ControlMaster auto
-ControlPath ~/.ssh/private/master-%r@%h:%p
+#ControlPath ~/.ssh/private/master-%r@%h:%p
 ForwardAgent yes
+
+Host github.softwareag.com *.trendminer.net github.com
+	IdentityAgent /Users/joger/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
 Host tm-*
      User joger
      IdentityFile ~/.ssh/id_rsa
 
-Host vm*.umask.net nas
+Host *.geraerts.local vm*.umask.net nas
      User jgeraert
      Identityfile ~/.ssh/id_rsa-private
 
 Host elmo
-     User ubnt
+     User jgeraert
      IdentityFile ~/.ssh/id_rsa-private
 
 Host home

@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/homebrew/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -104,6 +104,16 @@ source $ZSH/oh-my-zsh.sh
 
 source $(brew --prefix nvm)/nvm.sh
 export GOPATH=~/go
-export PATH="/usr/local/opt/avr-gcc@8/bin:$GOPATH/bin:$PATH"
+export PATH="/usr/local/opt/avr-gcc@8/bin:$GOPATH/bin:$HOME/.cargo/bin:$PATH"
 
-export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.rd/bin:$HOME/.poetry/bin:$PATH"
+export PATH="$(python3 -m site --user-base)/bin:$PATH"
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+
+
+export PKG_CONFIG_PATH=$(brew --prefix libffi)/lib/pkgconfig:$(brew --prefix zlib)/lib/pkgconfig
+
+# Created by `pipx` on 2023-06-17 14:40:16
+export PATH="$PATH:/Users/joger/.local/bin"
+export PATH="$PATH:/blaat"
