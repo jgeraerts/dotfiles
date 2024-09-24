@@ -1,0 +1,6 @@
+[user]
+  name = Jo Geraerts
+  email = jo@umask.net
+
+[includeIf "gitdir:~/projects/work/"]
+  path = ~/projects/work/.gitconfig
