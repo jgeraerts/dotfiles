@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/homebrew/bin
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -113,7 +113,4 @@ export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
 
 
 export PKG_CONFIG_PATH=$(brew --prefix libffi)/lib/pkgconfig:$(brew --prefix zlib)/lib/pkgconfig
-
-# Created by `pipx` on 2023-06-17 14:40:16
-export PATH="$PATH:/Users/joger/.local/bin"
-export PATH="$PATH:/blaat"
+export PATH="$PATH:${HOME}/.local/bin"

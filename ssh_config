@@ -1,4 +1,4 @@
-Include /Users/joger/.colima/ssh_config
+Include /Users/jo.geraerts/.colima/ssh_config
 
 ServerAliveInterval 30
 ControlMaster auto
@@ -25,17 +25,17 @@ Host tm-*
 
 Host *.geraerts.local vm*.umask.net nas
      User jgeraert
-     Identityfile ~/.ssh/id_rsa-private
+     Identityfile ~/.ssh/id_rsa-private.pub
 
 Host elmo
      User jgeraert
-     IdentityFile ~/.ssh/id_rsa-private
+     IdentityFile ~/.ssh/id_rsa-private.pub
 
 Host home  
      User pi
-     IdentityFile ~/.ssh/id_rsa-private
+     IdentityFile ~/.ssh/id_rsa-private.pub
 
 Host bepartners
      User jgeraert
-     IdentityFile ~/.ssh/id_rsa-private
+     IdentityFile ~/.ssh/id_rsa-private.pub
      Hostname 81.83.0.146
